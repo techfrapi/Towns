@@ -14,8 +14,11 @@ function deleteTown() {
 			option.remove();
 		}
 	}
-	if (removed)
+	if (removed) {
+		$('#result').css("display", "block");
 		$('#result').text(townName + " deleted.");
+	}
+		
 	else
 		$('#result').text(townName + " not found.");
 }
@@ -24,6 +27,7 @@ function addTown() {
 	let townName = $('#townNameForAdd').val();
 	$('#townNameForAdd').val('');
 	$('#towns').append($('<option>').text(townName));
+	$('#result').css("display", "block");
 	$('#result').text(townName + " added.");
 }
 
