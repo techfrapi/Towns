@@ -69,6 +69,7 @@ button#btnDelete:hover {
 }
 
 #result {
+	margin-top: 1rem;
 	display: none;
 	width: 90%;
     background: rgba(255, 255, 255, 0.8);
