@@ -44,10 +44,20 @@ button {
 
 }
 
+button#btnDelete {
+	background: red;
+}
+
+
 button:hover {
 	cursor: pointer;
 	background-color: #051ed5;
 }
+
+button#btnDelete:hover {
+	background: rgb(139, 0, 0);
+}
+
 
 .field input {
 	width: 7rem;
